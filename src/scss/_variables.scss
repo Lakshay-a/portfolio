@@ -1,5 +1,8 @@
-:root{
-    --navy-shadow: rgba(2, 12, 27, 0.7);
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Raleway&display=swap');
+
+
+:root {
+  --navy-shadow: rgba(2, 12, 27, 0.7);
   --background-color: #0a192f;
   --lightest-navy: #233554;
   --light-navy: #112240;
@@ -18,9 +21,13 @@
   --txlarge: 25px;
   --tx2large: 32px;
   --tgiant: clamp(40px, 8vw, 80px);
+
   @media screen and (max-width: 480px) {
     --tx2large: 25px;
     // --tgiant: 40px;
   }
+
+  --raleway: 'Raleway', sans-serif;
+  --fira-code: 'Fira Code', monospace; 
 
 }

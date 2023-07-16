@@ -1,0 +1,12 @@
+#logo{
+    color: var(--theme-color);
+    height:100%;
+    width:100%;
+    fill: none;
+    &:hover {
+        fill: #64fad91a;
+    }
+    &:focus {
+        fill: #64fad91a;
+    }
+}
