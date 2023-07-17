@@ -4,6 +4,7 @@ import Navbar from '@/sections/Navbar'
 import Socialicons from '@/components/Socialicons'
 import Intro from '@/sections/Intro'
 import About from '@/sections/About'
+import Experience from '@/sections/Experience'
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <main>
         <Intro />
         <About />
+        <Experience />
       </main>
     </div>
   )
