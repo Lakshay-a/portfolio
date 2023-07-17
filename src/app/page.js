@@ -1,13 +1,17 @@
 import Image from 'next/image'
 import styles from './page.module.css'
-import Navbar from '@/sectons/Navbar'
+import Navbar from '@/sections/Navbar'
 import Socialicons from '@/components/Socialicons'
+import Intro from '@/sections/Intro'
 
 export default function Home() {
   return (
-    <main className='app'>
+    <div className='app'>
       <Navbar />
       <Socialicons />
-    </main>
+      <main>
+        <Intro />
+      </main>
+    </div>
   )
 }
