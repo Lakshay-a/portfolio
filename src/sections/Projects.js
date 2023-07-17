@@ -56,7 +56,7 @@ function Projects() {
 
                                 </div>
                                 <div className="project-info">
-                                    <p className="project-info-overline">Featured Project</p>
+                                    {/* <p className="project-info-overline">Featured Project</p> */}
                                     <h3 className="project-info-title" >
                                         <Link href={projectLink} className="link" target="_blank">{projectName}</Link>
                                     </h3>
