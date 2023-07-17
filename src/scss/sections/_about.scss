@@ -76,17 +76,6 @@
             width: max-content;
             height: max-content;
 
-            &:hover {
-                .overlay {
-                    background-color: #00000000;
-                }
-
-                .overlay-border {
-                    top: 0.5rem;
-                    left: 0.5rem;
-                }
-            }
-
             .overlay {
                 transition: 0.3s ease-in-out;
                 z-index: 1;
@@ -109,6 +98,21 @@
                 transition: 0.3s ease-in-out;
             }
 
+            &:hover {
+                .overlay {
+                    background-color: #00000000;
+                }
+
+                .overlay-border {
+                    top: 0.5rem;
+                    left: 0.5rem;
+                }
+
+                img {
+                    filter: none;
+                }
+            }
+
             &-container {
                 position: relative;
                 height: 450px;
@@ -117,6 +121,7 @@
 
                 img {
                     z-index: 0;
+                    filter: grayscale(100%);
                     transition: 0.3s ease-in-out;
                     border-radius: 0.2rem;
                 }

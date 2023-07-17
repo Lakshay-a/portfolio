@@ -39,12 +39,10 @@ function About() {
                     </ul>
                 </div>
                 <div className="about-grid-photo">
-                    <div className="overlay">
-                        <div className="overlay-border">
-                            <div className="about-grid-photo-container">
-                                <Image src="/profile.webp" alt='profile pic' fill />
-                            </div>
-                        </div>
+                    <div className="overlay"></div>
+                    <div className="overlay-border"></div>
+                    <div className="about-grid-photo-container">
+                        <Image src="/profile.webp" alt='profile pic' fill />
                     </div>
                 </div>
             </div>

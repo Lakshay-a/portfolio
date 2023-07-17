@@ -5,6 +5,7 @@ import Socialicons from '@/components/Socialicons'
 import Intro from '@/sections/Intro'
 import About from '@/sections/About'
 import Experience from '@/sections/Experience'
+import Projects from '@/sections/Projects'
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <Intro />
         <About />
         <Experience />
+        <Projects />
       </main>
     </div>
   )
