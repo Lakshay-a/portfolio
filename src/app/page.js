@@ -3,6 +3,7 @@ import styles from './page.module.css'
 import Navbar from '@/sections/Navbar'
 import Socialicons from '@/components/Socialicons'
 import Intro from '@/sections/Intro'
+import About from '@/sections/About'
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <Socialicons />
       <main>
         <Intro />
+        <About />
       </main>
     </div>
   )
