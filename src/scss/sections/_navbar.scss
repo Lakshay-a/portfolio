@@ -1,7 +1,13 @@
 nav {
     min-height: 60px;
-
-    .wrapper {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: rgba(27,28,30,0.85);
+    backdrop-filter: blur(10px);
+    .wrapper { 
         padding: 0 4rem;
         width: 100%;
         display: flex;

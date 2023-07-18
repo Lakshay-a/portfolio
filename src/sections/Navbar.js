@@ -1,4 +1,5 @@
-import React from 'react'
+"use client";
+import React, { useEffect } from 'react'
 import Link from "next/link"
 import Logo from '@/components/Logo'
 import Button from '@/components/Button';
@@ -11,12 +12,13 @@ function Navbar() {
         { name: "Work", link: "/#work" },
         { name: "Contact", link: "/#contact" },
     ];
+
     return (
         <nav>
             <div className='wrapper'>
 
                 <div className="logo">
-                    <Link href="">
+                    <Link href="/">
                         <Logo />
                     </Link>
                 </div>

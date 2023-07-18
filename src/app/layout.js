@@ -1,5 +1,5 @@
 import styles from '@/scss/index.scss'
-
+import Head from 'next/head'
 
 export const metadata = {
   title: 'Create Next App',
@@ -9,9 +9,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
-        {children}
-      </body>
-    </html>
-  )
+          <body>
+            {children}
+          </body>
+        </html>
+        )
 }
