@@ -27,19 +27,19 @@ function Contact() {
             <form ref={form} onSubmit={sendEmail} className="contact-form">
                 <div className="contact-form-div">
                     <label className='contact-form-tag'>Name</label>
-                    <input type="text" name='name' className="contact-form-input" placeholder='Your name' />
+                    <input type="text" name='name' className="contact-form-input" placeholder='Your name' required/>
                 </div>
                 <div className="contact-form-div">
                     <label className='contact-form-tag'>Email</label>
-                    <input type="email" name='email' className="contact-form-input" placeholder='Your email id' />
+                    <input type="email" name='email' className="contact-form-input" placeholder='Your email id' required/>
                 </div>
                 <div className="contact-form-div">
                     <label className='contact-form-tag'>Subject</label>
-                    <input type="text" name='subject' className="contact-form-input" placeholder='Let me know how i can help' />
+                    <input type="text" name='subject' className="contact-form-input" placeholder='Let me know how i can help' required/>
                 </div>
                 <div className="contact-form-div contact-form-area">
                     <label className='contact-form-tag'>Message</label>
-                    <textarea name="message" cols="30" rows="10" className="contact-form-input" placeholder='Enter your message...'></textarea>
+                    <textarea name="message" cols="30" rows="10" className="contact-form-input" placeholder='Enter your message...' required></textarea>
                 </div>
                 <div className="contact-cta" onClick={sendEmail}>
                     <Button text="Send message" link="/#contact" />

@@ -1,13 +1,12 @@
 nav {
     min-height: 60px;
-    position: sticky;
-    top: 0;
-    left: 0;
-    width: 100%;
     z-index: 100;
-    background-color: rgba(27,28,30,0.85);
+    width: 100%;
+    background-color: var(--background-color-nav);
     backdrop-filter: blur(10px);
-    .wrapper { 
+    transition: 0.3s ease-in-out;
+
+    .wrapper {
         padding: 0 4rem;
         width: 100%;
         display: flex;
@@ -15,6 +14,75 @@ nav {
         justify-content: space-between;
         transition: 0.3s ease-in-out;
         position: relative;
+
+        .navb {
+            display: flex;
+            flex-direction: row;
+            gap: 3rem;
+
+            .theme {
+                .toggle-button {
+                    cursor: pointer;
+                    outline: 2px dashed transparent;
+                    border: none;
+                    transition: 0.3s ease-in-out;
+                    background-color: inherit;
+
+                    &:focus {
+                        outline-color: var(--theme-color);
+                    }
+                }
+
+                .icon {
+                    font-size: var(--tx2large);
+                    color: var(--lightest-slate);
+                    transition: 0.3s ease-in-out;
+                    background-color: inherit;
+
+                    &:hover {
+                        color: var(--theme-color);
+                    }
+
+                    &:focus {
+                        color: var(--theme-color);
+                    }
+                }
+            }
+
+            .nav-items {
+                display: flex;
+                align-items: center;
+                gap: 3rem;
+                font-size: var(--tsm1);
+                color: var(--lightest-slate);
+                font-family: var(--fira-code);
+
+                &-list {
+                    display: flex;
+                    align-items: center;
+                    gap: 3rem;
+                    list-style-type: none;
+
+                    &-item {
+                        a {
+                            color: inherit;
+                            text-decoration: none;
+                            padding: 10px;
+                            outline: 2px dashed transparent;
+                            transition: 0.3s ease-in-out;
+                        }
+
+                        &:hover {
+                            color: var(--theme-color);
+                        }
+
+                        a:focus {
+                            outline-color: var(--theme-color);
+                        }
+                    }
+                }
+            }
+        }
 
         .logo {
             a {
@@ -36,33 +104,55 @@ nav {
             }
         }
 
-        .nav-items {
-            display: flex;
-            gap: 3rem;
-            font-size: var(--tsm1);
-            color: var(--lightest-slate);
-            font-family: var(--fira-code);
+        .nav-responsive-toggle {
+            display: none;
+            color: var(--theme-color);
+            font-size: var(--tlarge2);
+            justify-content: center;
+            align-items: center;
+            transition: 0.3s ease-in-out;
+            z-index: 15;
+        }
 
-            &-list {
+        @media screen and (max-width: 1020px) {
+            padding: 0 2rem;
+
+            .nav-responsive-toggle {
                 display: flex;
-                gap: 3rem;
-                list-style-type: none;
+                z-index: 15;
+            }
 
-                &-item {
-                    a {
-                        color: inherit;
-                        text-decoration: none;
-                        padding: 10px;
-                        outline: 2px dashed transparent;
-                        transition: 0.3s ease-in-out;
-                    }
-                    &:hover {
-                        color: var(--theme-color);
-                    }
-                    a:focus {
-                        outline-color: var(--theme-color);
-                    }
+            .nav-items {
+                position: fixed;
+                height: 100vh;
+                right: 0;
+                width: 0%;
+                opacity: 0;
+                visibility: hidden;
+                top: 0;
+                padding: 50px 10px;
+                background-color: var(--light-navy);
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                transition: 0.3s ease-in-out;
+                z-index: 11;
+
+                &-list {
+                    flex-direction: column;
                 }
+            }
+
+            .nav-responsive {
+                width: min(75vw, 400px);
+                visibility: visible;
+                opacity: 1;
+            }
+
+            .theme{
+                visibility: visible;
+                opacity: 1;
+                z-index: 15;
             }
         }
     }
