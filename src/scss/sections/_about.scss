@@ -10,17 +10,17 @@
             margin-bottom: 2rem;
             font-size: var(--tx2large);
             font-weight: 700;
-        }
 
-        &::after {
-            content: "";
-            display: block;
-            position: absolute;
-            top: 20px;
-            width: 300px;
-            height: 2px;
-            margin-left: 180px;
-            background-color: var(--theme-color);
+            &::after {
+                content: "";
+                display: block;
+                position: absolute;
+                top: 20px;
+                width: 300px;
+                height: 2px;
+                margin-left: 180px;
+                background-color: var(--theme-color);
+            }
         }
     }
 
@@ -128,4 +128,104 @@
             }
         }
     }
+
+    @media screen and (max-width: 1024px) {
+        margin: 5rem 0;
+
+        &-grid {
+            &-photo {
+                margin-bottom: 2rem;
+
+                .overlay {
+                    height: 380px;
+                    width: 300px;
+                }
+
+                &-container {
+                    height: 380px;
+                    width: 300px;
+                }
+            }
+
+            &-info {
+                &-list {
+                    grid-template-columns: 1fr;
+                }
+
+                &-text {
+                    margin-right: 0;
+                }
+            }
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column-reverse;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        margin: 5rem auto;
+
+        .title {
+            h2 {
+                &::after {
+                    width: 200px;
+                }
+            }
+        }
+
+        &-grid {
+            &-photo {
+                margin-top: 2rem;
+
+                .overlay {
+                    height: 380px;
+                    width: 300px;
+                }
+
+                &-container {
+                    height: 380px;
+                    width: 300px;
+                }
+            }
+
+            &-info {
+                &-text {
+                    margin-right: 0;
+                }
+            }
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column-reverse;
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        .title {
+            h2 {
+                &::after {
+                    margin-left: 140px;
+                    width: 150px;
+                }
+            }
+        }
+
+        &-grid {
+            &-photo {
+                .overlay {
+                    height: 283px;
+                    width: 223px;
+                }
+
+                &-container {
+                    height: 283px;
+                    width: 223px;
+                }
+            }
+        }
+    }
+
 }

@@ -1,7 +1,9 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { FiGithub } from "react-icons/fi";
+import { motion } from "framer-motion";
 
 function Projects() {
     const projects = [
@@ -29,7 +31,15 @@ function Projects() {
         }
     ];
     return (
-        <div className="projects" id='work'>
+        <motion.div className="projects" id='work'
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            variants={{
+                hidden: { opacity: 0, y: 0 },
+                visible: { opacity: 1, y: -50 }
+            }}>
             <div className="title">
                 <h2>Some things I&apos;ve Built</h2>
             </div>
@@ -50,7 +60,7 @@ function Projects() {
 
                                     <div className="project-image-container">
                                         <a href={projectExternalLinks.github}>
-                                            <Image src={image} alt={projectName} fill quality={100}/>
+                                            <Image src={image} alt={projectName} fill quality={100} />
                                         </a>
                                     </div>
 
@@ -86,7 +96,7 @@ function Projects() {
                         )
                     })}
             </div>
-        </div>
+        </motion.div>
     );
 }
 export default Projects

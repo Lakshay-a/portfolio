@@ -6,6 +6,7 @@ import Button from '@/components/Button';
 import { BsMoonStarsFill, BsSunFill } from 'react-icons/bs';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { CgClose } from 'react-icons/cg';
+import { motion } from 'framer-motion';
 
 function Navbar() {
     const sectionLinks = [
@@ -77,21 +78,47 @@ function Navbar() {
         <nav style={{ ...navbarStyles, top: visible ? '0' : '-110px' }}>
             <div className='wrapper'>
 
-                <div className="logo">
+                <motion.div
+                    className="logo"
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{
+                        duration: 0.3,
+                        ease: "easeInOut",
+                    }}
+                >
                     <Link href="/">
                         <Logo />
                     </Link>
-                </div>
+                </motion.div>
 
 
                 <div className='navb'>
                     <div className="theme">
-                        <button className='toggle-button' onClick={toggleTheme}>
+                        <motion.button
+                            className='toggle-button'
+                            onClick={toggleTheme}
+                            initial={{ opacity: 0, y: -25 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{
+                                duration: 0.3,
+                                ease: "easeInOut",
+                                delay: 0.2
+                            }}
+                        >
                             {isLightMode ? <BsMoonStarsFill className='icon' /> : <BsSunFill className='icon' />}
-                        </button>
+                        </motion.button>
                     </div>
 
-                    <div className="nav-responsive-toggle">
+                    <motion.div
+                        className="nav-responsive-toggle"
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{
+                            duration: 0.3,
+                            ease: "easeInOut",
+                        }}
+                    >
                         {hamburgerOpen ? (
                             <CgClose
                                 onClick={(e) => {
@@ -107,21 +134,40 @@ function Navbar() {
                                 }}
                             />
                         )}
-                    </div>
+                    </motion.div>
 
                     <div className={`${hamburgerOpen && 'nav-responsive'} nav-items`}>
                         <ul className="nav-items-list">
-                            {sectionLinks.map(({ name, link }) => (
-                                <li key={name} className='nav-items-list-item'>
+                            {sectionLinks.map(({ name, link }, index) => (
+                                <motion.li
+                                    key={name}
+                                    className='nav-items-list-item'
+                                    initial={{ opacity: 0, y: -25 }}
+                                    animate={{ opacity: 1, y: 0 }}
+                                    transition={{
+                                        duration: 0.3,
+                                        ease: "easeInOut",
+                                        delay: 0.3 + (index + 1) * 0.1
+                                    }}
+                                >
                                     <Link href={link} className='nav-items-list-item-link'>
                                         {name}
                                     </Link>
-                                </li>
+                                </motion.li>
                             ))}
                         </ul>
-                        <div className="nav-items-button">
+                        <motion.div
+                            className="nav-items-button"
+                            initial={{ opacity: 0, y: -25 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{
+                                duration: 0.3,
+                                ease: "easeInOut",
+                                delay: 0.7
+                            }}
+                        >
                             <Button text="Resume" link="http://localhost:3000/resume.pdf" />
-                        </div>
+                        </motion.div>
                     </div>
                 </div>
             </div>

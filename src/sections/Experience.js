@@ -1,13 +1,14 @@
 "use client";
 import React, { useEffect, useState } from 'react'
 import Link from 'next/link';
+import { motion } from 'framer-motion';
 
 function Experience() {
     const [selected, setSelected] = useState(0);
     useEffect(() => {
         const transformSelection = () => {
-            const underline= document.querySelector('.underline');
-            underline.style.top= `${selected * 4}rem`;
+            const underline = document.querySelector('.underline');
+            underline.style.top = `${selected * 4}rem`;
         };
         transformSelection();
     }, [selected]);
@@ -15,7 +16,7 @@ function Experience() {
         {
             name: 'Leo Club Eternity Service',
             role: 'Full Stack Developer',
-            url: '',
+            url: 'https://leoclubes.org/',
             start: 'April 2023',
             end: 'July 2023',
             shortDescription: [
@@ -36,7 +37,15 @@ function Experience() {
         },
     ];
     return (
-        <div className="experience" id='experience'>
+        <motion.div className="experience" id='experience'
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            variants={{
+                hidden: { opacity: 0, y: 0 },
+                visible: { opacity: 1, y: -50 }
+            }}>
             <div className="title">
                 <h2>Where I&apos;ve worked</h2>
             </div>
@@ -56,7 +65,7 @@ function Experience() {
                             <span>{experience[selected].role}</span>
                             <span className="exp-details-position-company">
                                 &nbsp;@&nbsp;
-                                <Link className='link' href={experience[selected].url}>
+                                <Link className='link' href={experience[selected].url} target='_blank'>
                                     {experience[selected].name}{""}
                                 </Link>
                             </span>
@@ -76,7 +85,7 @@ function Experience() {
                     </div>
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }
 

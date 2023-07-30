@@ -1,9 +1,20 @@
+"use client";
 import React from 'react'
 import Image from 'next/image'
+import { motion } from 'framer-motion'
 
 function About() {
     return (
-        <div className="about" id='about'>
+        <motion.div className="about" id='about'
+        initial="hidden"
+        whileInView="visible"
+        viewport={{once: true}}
+        transition={{duration: 0.6}}
+        variants={{
+            hidden: {opacity: 0, y: 0},
+            visible: {opacity: 1, y: -50}
+        }}
+        >
             <div className="title">
                 <h2>About me</h2>
             </div>
@@ -46,7 +57,7 @@ function About() {
                     </div>
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }
 
