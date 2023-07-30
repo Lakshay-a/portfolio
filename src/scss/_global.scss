@@ -1,15 +1,21 @@
 body {
     background-color: var(--background-color);
+    transition: background-color 0.3s ease-in-out;
 }
 
 body,html{
     scroll-behavior: smooth !important;
+    overflow-x: hidden;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+.imp{
+    color: var(--theme-color);
 }
 
 .link {
