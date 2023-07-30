@@ -14,6 +14,10 @@ body,html{
     box-sizing: border-box;
 }
 
+.imp{
+    color: var(--theme-color);
+}
+
 .link {
     text-decoration: none;
     display: inline-block;

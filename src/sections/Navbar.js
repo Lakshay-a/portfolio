@@ -11,7 +11,7 @@ import { motion } from 'framer-motion';
 function Navbar() {
     const sectionLinks = [
         { name: "About", link: "/#about" },
-        { name: "Skills", link: "/#skills" },
+        // { name: "Skills", link: "/#skills" },
         { name: "Experience", link: "/#experience" },
         { name: "Work", link: "/#work" },
         { name: "Contact", link: "/#contact" },

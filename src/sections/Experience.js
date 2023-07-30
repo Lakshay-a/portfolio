@@ -22,7 +22,7 @@ function Experience() {
             shortDescription: [
                 "Developed a full-stack web application using React, Sanity and Tailwind CSS for the NGO.",
                 "Coded the front-end while maintaining responsiveness, optimizing user experience, and creating a clean interface. Additionally, served as the backend developer, implementing robust and scalable solutions, handling data management, and ensuring smooth functionality of the entire system.",
-                "Collaborated with Design, Tech, Content Team and Senior members, using Slack, Git, Figma and Trello. Ensured proper SEO, easy on the eye brand-consistent design, clean Wireframes and swift deployment via Netlify/Hostinger etc.",
+                "Collaborated with Design, Tech, Content Team and Senior members, using Slack, Git and Figma. Ensured proper SEO, easy on the eye brand-consistent design, clean Wireframes and swift deployment via Hostinger etc.",
             ],
         },
         {
