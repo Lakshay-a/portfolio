@@ -16,7 +16,7 @@ function Loader({ isLoading, setIsLoading }) {
                     duration: 0.45,
                     ease: "easeInOut",
                 }}>
-                <svg id="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                <svg id="loader" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
                     <title>Logo</title>
                     <g>
                         <g id="K" transform="translate(35.000000, 33.000000)">

@@ -29,7 +29,6 @@ export default function Home() {
         showContent && (
           <>
             <Navbar />
-            <Socialicons />
             <main>
               <Intro />
               <About />
@@ -37,6 +36,7 @@ export default function Home() {
               <Projects />
               <Contact />
             </main>
+            <Socialicons />
           </>
         )
       }

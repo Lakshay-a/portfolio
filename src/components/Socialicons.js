@@ -32,7 +32,7 @@ function Socialicons() {
             name: "Email",
             icon: <TfiEmail />,
             link: "mailto:lakshayarora1612@gmail.com"
-        }
+        },
     ];
     return (
         <motion.div className="social-icons"

@@ -1,40 +1,48 @@
-.social-icons{
+.social-icons {
     position: fixed;
     bottom: 0;
-    left:4rem;
-    &-list{
+    left: 4rem;
+
+    &-list {
         list-style-type: none;
         display: flex;
         flex-direction: column;
         gap: 0.5rem;
-        &-item{
+
+        &-item {
             font-size: var(--txlarge);
             display: flex;
             justify-content: center;
             align-items: center;
             transition: 0.3s ease-in-out;
-            &-link{
+
+            &-link {
                 padding: 10px;
                 color: var(--lightest-slate);
                 transition: 0.3s ease-in-out;
                 outline: 2px dashed transparent;
-                &:hover{
+
+                &:hover {
                     color: var(--theme-color);
                 }
-                &:focus{
+
+                &:focus {
                     outline-color: var(--theme-color);
                     transform: translateY(-4px);
                     color: var(--theme-color);
                 }
             }
-            &:hover{
+
+            &:hover {
                 transform: translateY(-4px);
             }
-            &:last-child{
+
+            &:last-child {
                 margin-bottom: 2rem;
             }
         }
-        &::after{
+
+        &::after {
             content: "";
             display: block;
             width: 2px;
@@ -43,10 +51,43 @@
             margin: 0 auto;
         }
     }
-    @media screen and (max-width:1080px){
+
+    @media screen and (max-width:1080px) {
         left: 2rem;
     }
-    @media screen and (max-width:768px){
-        display: none;
+}
+
+@media screen and (max-width:768px) {
+    .social-icons {
+        margin-bottom: 2rem;
+        position: inherit;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+        &-list {
+            display: flex;
+            flex-direction: row;
+
+            &-item {
+                font-size: var(--txlarge);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: 0.3s ease-in-out;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+
+            &::after {
+                display: none;
+            }
+        }
+
+        
+
     }
 }

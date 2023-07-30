@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { FiGithub } from "react-icons/fi";
+import { FiGithub,FiExternalLink } from "react-icons/fi";
 import { motion } from "framer-motion";
 
 function Projects() {
@@ -16,6 +16,7 @@ function Projects() {
             projectExternalLinks:
             {
                 github: "https://github.com/Lakshay-a/SimplyBlog.git",
+                externalLink:"https://github.com/Lakshay-a/SimplyBlog.git"
             },
         },
         {
@@ -27,6 +28,7 @@ function Projects() {
             projectExternalLinks:
             {
                 github: "https://github.com/Lakshay-a/Whatsapp-clone.git",
+                externalLink: "https://github.com/Lakshay-a/Whatsapp-clone.git"
             },
         }
     ];
@@ -88,6 +90,14 @@ function Projects() {
                                                 target="_blank"
                                             >
                                                 <FiGithub />
+                                            </Link>
+                                        </li>
+                                        <li className="project-info-links-item">
+                                            <Link
+                                                href={projectExternalLinks.externalLink}
+                                                className="project-info-links-item-link"
+                                            >
+                                                <FiExternalLink />
                                             </Link>
                                         </li>
                                     </ul>
