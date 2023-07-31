@@ -24,10 +24,10 @@ function About() {
                     Hello, I&apos;m Lakshay Arora, a Computer Science student from New Delhi with a passion for technology and a strong background in <span className="imp">full-stack development</span>. I find great joy in crafting efficient and elegant solutions for web applications and I also have in-depth knowledge of <span className="imp">data structures and algorithms</span>.
                     </p>
                     <p className="about-grid-info-text">
-                    I have a strong passion for <span className="imp">machine learning</span>. The idea of creating smart systems that can solve real-world problems excites me, and I'm always eager to explore new ways to apply this cutting-edge technology to various domains.
+                    I have a strong passion for <span className="imp">machine learning</span>. The idea of creating smart systems that can solve real-world problems excites me, and I&apos;m always eager to explore new ways to apply this cutting-edge technology to various domains.
                     </p>
                     <p className="about-grid-info-text">
-                    I am also known for my <span className="imp">flexibility</span> and a genuine <span className="imp">eagerness to learn new things</span>. I believe that the world of technology is constantly evolving, and staying curious and open-minded is essential for personal growth. I'm always up for a challenge and continually seek opportunities to expand my skillset.
+                    I am also known for my <span className="imp">flexibility</span> and a genuine <span className="imp">eagerness to learn new things</span>. I believe that the world of technology is constantly evolving, and staying curious and open-minded is essential for personal growth. I&apos;m always up for a challenge and continually seek opportunities to expand my skillset.
                     </p>
                     <p className="about-grid-info-text">
                     I am fluent in both <span className="imp">English</span> and <span className="imp">Hindi</span>, which has proven to be a valuable asset in my journey as a tech enthusiast. This bilingual proficiency allows me to effectively communicate and collaborate with a diverse range of individuals, transcending language barriers and fostering a deeper understanding of ideas and concepts. 

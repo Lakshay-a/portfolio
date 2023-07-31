@@ -45,7 +45,7 @@ function Navbar() {
 
         return () => window.removeEventListener('scroll', handleScroll);
 
-    }, [prevScrollPos, visible, handleScroll]);
+    }, [prevScrollPos, visible]);
 
     useEffect(() => {
         const links = document.querySelectorAll('.nav-items-list-item-link');
