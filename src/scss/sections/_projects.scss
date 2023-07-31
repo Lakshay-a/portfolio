@@ -196,6 +196,21 @@
                         p {
                             padding: 0;
                             text-align: start;
+                            color: var(--project-text-color);
+                        }
+                    }
+
+                    &-tech-list {
+                        &-item{
+                            color: var(--project-text-color);
+                        }
+                    }
+
+                    &-links{
+                        &-item{
+                            &-link{
+                                color: var(--project-text-color);
+                            }
                         }
                     }
                 }

@@ -15,6 +15,7 @@
   --lightest-slate: #a8b2d1;
   --theme-color: #ffdb58;
   --overlay-color:#ffdb584d;
+  --project-text-color:#ccd6f6;
 
   &.light{
     --background-color: #f7f7f7;
@@ -27,6 +28,7 @@
     --lightest-slate: #374151;
     --theme-color:#976142;
     --overlay-color:#0000004d;
+    --project-text-color:#fff;
   }
 
   --tsm: 13px;
