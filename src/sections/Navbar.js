@@ -23,7 +23,7 @@ function Navbar() {
     const [hamburgerOpen, setHamburgerOpen] = useState(false);
 
     const navbarStyles = {
-        position: 'sticky',
+        position: 'fixed',
     }
 
     const handleScroll = () => {
