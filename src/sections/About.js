@@ -21,7 +21,7 @@ function About() {
             <div className="about-grid">
                 <div className="about-grid-info">
                     <p className="about-grid-info-text">
-                    Hello, I'm Lakshay Arora, a Computer Science student from New Delhi with a passion for technology and a strong background in <span className="imp">full-stack development</span>. I find great joy in crafting efficient and elegant solutions for web applications and I also have in-depth knowledge of <span className="imp">data structures and algorithms</span>.
+                    Hello, I&apos;m Lakshay Arora, a Computer Science student from New Delhi with a passion for technology and a strong background in <span className="imp">full-stack development</span>. I find great joy in crafting efficient and elegant solutions for web applications and I also have in-depth knowledge of <span className="imp">data structures and algorithms</span>.
                     </p>
                     <p className="about-grid-info-text">
                     I have a strong passion for <span className="imp">machine learning</span>. The idea of creating smart systems that can solve real-world problems excites me, and I'm always eager to explore new ways to apply this cutting-edge technology to various domains.
