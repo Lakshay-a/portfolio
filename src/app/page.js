@@ -24,6 +24,7 @@ export default function Home() {
       <Head>
         <title>Lakshay Arora</title>
         <link rel="shortcut icon" href="/favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       </Head>
       {
         showContent && (
