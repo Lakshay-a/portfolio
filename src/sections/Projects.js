@@ -20,6 +20,18 @@ function Projects() {
             },
         },
         {
+            image: "/ASL.png",
+            projectName: "Sign Language Detection",
+            projectLink: "https://github.com/Lakshay-a/Sign-language-detection.gitt",
+            projectDescription: "This project is aimed at detecting American Sign Language (ASL) alphabets in real-time using computer vision. The system utilizes OpenCV for image processing, MediaPipe for hand detection, and a Random Forest classifier from scikit-learn for alphabet recognition.",
+            projectTech: ["Python", "MediaPipe", "OpenCV", "Scikit-learn",],
+            projectExternalLinks:
+            {
+                github: "https://github.com/Lakshay-a/Sign-language-detection.git",
+                externalLink: "https://github.com/Lakshay-a/Sign-language-detection.git"
+            },
+        },
+        {
             image: "/whatsapp.webp",
             projectName: "Whatsapp Clone",
             projectLink: "https://github.com/Lakshay-a/Whatsapp-clone.git",
