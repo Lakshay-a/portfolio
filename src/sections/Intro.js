@@ -34,7 +34,7 @@ function Intro() {
           delay: 1.1,
         }}>
         {/* I craft elegant and intuitive web solutions that bring visions to life, one line of code at a time */}
-        Driven by a passion for machine learning and data science, I'm dedicated to leveraging data to drive impactful decisions.
+        Driven by a passion for machine learning and data science, I&apos;m dedicated to leveraging data to drive impactful decisions.
       </motion.h3>
       <motion.p className="intro-text"
         initial={{ opacity: 0, y: 5 }}
