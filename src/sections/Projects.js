@@ -8,39 +8,39 @@ import { motion } from "framer-motion";
 function Projects() {
     const projects = [
         {
-            image: "/blog.webp",
-            projectName: "SimplyBlog",
-            projectLink: "https://github.com/Lakshay-a/SimplyBlog.git",
-            projectDescription: "This is a MERN (mongo, express, react, node) stack blog web application which is fully responsive. It can be used to write a new blog, edit an existing blog, delete a blog, and view the blogs of other users too. It has a rich-text editor which i made using react-quill library and it also has authentication feature.",
-            projectTech: ["React", "Node.js", "MongoDB", "Express.js", "react-quill",],
+            image: "/Text_summarisation.webp",
+            projectName: "Text Summarization System",
+            projectLink: "https://github.com/Lakshay-a/Text-Summary-Generator.git",
+            projectDescription: "An end-to-end GenAI workflow using T5 for preprocessing, training, ROUGE/BLEU evaluation, inference, and deployment packaging. The model is served through a Dockerised FastAPI application for REST API access and easier output comparison.",
+            projectTech: ["Python", "PyTorch", "Transformers", "T5", "FastAPI", "Docker",],
             projectExternalLinks:
             {
-                github: "https://github.com/Lakshay-a/SimplyBlog.git",
-                externalLink:"https://github.com/Lakshay-a/SimplyBlog.git"
+                github: "https://github.com/Lakshay-a/Text-Summary-Generator.git",
+                externalLink:"https://github.com/Lakshay-a/Text-Summary-Generator.git"
+            },
+        },
+        {
+            image: "/Alzheimer.webp",
+            projectName: "Alzheimer's Disease Diagnosis System",
+            projectLink: "https://github.com/Lakshay-a/Alzheimer-Diagnosis-using-Hybrid-PSO-GA-DenseNet-121.git",
+            projectDescription: "A DenseNet-121 deep learning system for medical image classification, covering preprocessing, training, evaluation, and inference. The workflow integrates PSO-GA optimisation to reduce feature dimensionality by 80% and improve classification performance by approximately 9%.",
+            projectTech: ["Python", "TensorFlow", "Keras", "OpenCV", "DenseNet-121",],
+            projectExternalLinks:
+            {
+                github: "https://github.com/Lakshay-a/Alzheimer-Diagnosis-using-Hybrid-PSO-GA-DenseNet-121.git",
+                externalLink: "https://github.com/Lakshay-a/Alzheimer-Diagnosis-using-Hybrid-PSO-GA-DenseNet-121.git"
             },
         },
         {
             image: "/ASL.png",
             projectName: "Sign Language Detection",
             projectLink: "https://github.com/Lakshay-a/Sign-language-detection.git",
-            projectDescription: "This project is aimed at detecting American Sign Language (ASL) alphabets in real-time using computer vision. The system utilizes OpenCV for image processing, MediaPipe for hand detection, and a Random Forest classifier from scikit-learn for alphabet recognition.",
+            projectDescription: "A real-time computer vision project for detecting American Sign Language alphabets using OpenCV for image processing, MediaPipe for hand detection, and a Scikit-learn Random Forest classifier for recognition.",
             projectTech: ["Python", "MediaPipe", "OpenCV", "Scikit-learn",],
             projectExternalLinks:
             {
                 github: "https://github.com/Lakshay-a/Sign-language-detection.git",
                 externalLink: "https://github.com/Lakshay-a/Sign-language-detection.git"
-            },
-        },
-        {
-            image: "/whatsapp.webp",
-            projectName: "Whatsapp Clone",
-            projectLink: "https://github.com/Lakshay-a/Whatsapp-clone.git",
-            projectDescription: "A visually stunning UI clone of WhatsApp, built using React.js, to emulate the familiar messaging interface and deliver a seamless user experience for effective communication",
-            projectTech: ["React", "CSS", "Firebase", "JavaScript",],
-            projectExternalLinks:
-            {
-                github: "https://github.com/Lakshay-a/Whatsapp-clone.git",
-                externalLink: "https://github.com/Lakshay-a/Whatsapp-clone.git"
             },
         }
     ];
