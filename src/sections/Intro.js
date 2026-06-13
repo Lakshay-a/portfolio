@@ -33,7 +33,7 @@ function Intro() {
           ease: "easeInOut",
           delay: 1.1,
         }}>
-        Graduate Data Scientist building machine learning, computer vision, and analytics systems that turn complex data into useful decisions.
+        Data Scientist building machine learning, computer vision, and analytics systems that turn complex data into useful decisions.
       </motion.h3>
       <motion.p className="intro-text"
         initial={{ opacity: 0, y: 5 }}

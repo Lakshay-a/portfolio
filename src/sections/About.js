@@ -21,7 +21,7 @@ function About() {
             <div className="about-grid">
                 <div className="about-grid-info">
                     <p className="about-grid-info-text">
-                    Hello, I&apos;m Lakshay Arora, a <span className="imp">Graduate Data Scientist</span> based in London and currently pursuing an MSc in Data Science at <span className="imp">King&apos;s College London</span>. I work at the intersection of machine learning, analytics, and software engineering.
+                    Hello, I&apos;m Lakshay Arora, a <span className="imp">Data Scientist</span> based in London and currently pursuing an MSc in Data Science at <span className="imp">King&apos;s College London</span>. I work at the intersection of machine learning, analytics, and software engineering.
                     </p>
                     <p className="about-grid-info-text">
                     My recent experience includes building <span className="imp">computer vision</span> and sensor-data pipelines at IIT Delhi, developing healthcare machine learning workflows at MAIT, and turning noisy real-world data into structured outputs for evaluation, reporting, and decision support.

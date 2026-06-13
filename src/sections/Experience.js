@@ -59,7 +59,8 @@ function Experience() {
             start: 'Apr 2023',
             end: 'Jul 2023',
             shortDescription: [
-                "Maintained a public-facing website and content workflow for the NGO, coordinating across teams to keep reporting accurate and timely.",
+                "Developed a public-facing product platform using React, REST APIs, Git, Sanity CMS, and cloud hosting, supporting content workflows, backend integrations, and documented delivery.",
+                "Collaborated in a 10+ member multidisciplinary team across UI/UX, content, social media, photography, and engineering.",   
             ],
         },
     ];
