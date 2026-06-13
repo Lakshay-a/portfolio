@@ -33,8 +33,7 @@ function Intro() {
           ease: "easeInOut",
           delay: 1.1,
         }}>
-        {/* I craft elegant and intuitive web solutions that bring visions to life, one line of code at a time */}
-        Driven by a passion for machine learning and data science, I&apos;m dedicated to leveraging data to drive impactful decisions.
+        Data Scientist building machine learning, computer vision, and analytics systems that turn complex data into useful decisions.
       </motion.h3>
       <motion.p className="intro-text"
         initial={{ opacity: 0, y: 5 }}
@@ -44,7 +43,7 @@ function Intro() {
           ease: "easeInOut",
           delay: 1.35,
         }}>
-        I&apos;m a computer science student based in New Delhi, India. I specialize in building responsive websites and mobile apps. Fascinated by machine learning and artificial intelligence, I aspire to create intelligent applications that shape the future.
+        I&apos;m based in London, pursuing an MSc in Data Science at King&apos;s College London. My recent work spans AI-enabled data pipelines, medical image analysis, GenAI applications, and reproducible model evaluation workflows.
       </motion.p>
     </div>
   )

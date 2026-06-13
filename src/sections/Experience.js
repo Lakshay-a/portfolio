@@ -14,25 +14,53 @@ function Experience() {
     }, [selected]);
     const experience = [
         {
-            name: 'Leo Club Eternity Service',
-            role: 'Full Stack Developer',
-            url: 'https://leoclubes.org/',
-            start: 'April 2023',
-            end: 'July 2023',
+            name: 'Indian Institute of Technology, Delhi',
+            shortName: 'IIT Delhi',
+            role: 'Junior Research Fellow (Computer Vision)',
+            url: 'https://home.iitd.ac.in/',
+            start: 'May 2025',
+            end: 'Aug 2025',
             shortDescription: [
-                "Developed a full-stack web application using React, Sanity and Tailwind CSS for the NGO.",
-                "Coded the front-end while maintaining responsiveness, optimizing user experience, and creating a clean interface. Additionally, served as the backend developer, implementing robust and scalable solutions, handling data management, and ensuring smooth functionality of the entire system.",
-                "Collaborated with Design, Tech, Content Team and Senior members, using Slack, Git and Figma. Ensured proper SEO, easy on the eye brand-consistent design, clean Wireframes and swift deployment via Hostinger etc.",
+                "Built AI-enabled data pipelines using Python, OpenCV, MediaPipe, YOLO, Intel RealSense, and MySQL to convert real-time video and depth streams into structured data.",
+                "Engineered processing workflows for noisy sequential sensor data, including calibration, validation, anomaly detection, movement metrics, reporting, and performance review.",
+                "Partnered with clinicians, researchers, and technical stakeholders to refine analytics outputs and translate model results into clinical decision support.",
             ],
         },
         {
-            name: 'SK Children Foundation',
-            role: 'Volunteer',
-            url: 'https://skchildrenfoundation.org/',
-            start: 'October 2022',
-            end: 'November 2022',
+            name: 'Indian Institute of Technology, Delhi',
+            shortName: 'IIT Delhi',
+            role: 'Research Intern',
+            url: 'https://home.iitd.ac.in/',
+            start: 'Dec 2024',
+            end: 'Apr 2025',
             shortDescription: [
-                "Passionate volunteer actively engaged as a volunteer in an NGO that empowers underprivileged children through education and holistic support. By spreading awareness and mobilizing resources, I actively contributed to raising funds, enabling these young minds to thrive and fulfill their potential.",
+                "Supported computer vision research by developing video and depth-data processing workflows for movement analysis.",
+                "Worked across experimentation, data validation, metric extraction, and reporting to make model outputs easier to evaluate and interpret.",
+            ],
+        },
+        {
+            name: 'Maharaja Agrasen Institute of Technology',
+            shortName: 'MAIT',
+            role: 'Research Assistant',
+            url: 'https://mait.ac.in/',
+            start: 'Sep 2023',
+            end: 'Sep 2024',
+            shortDescription: [
+                "Developed machine learning and analytics pipelines using Python, TensorFlow, Keras, Scikit-learn, Pandas, NumPy, and OpenCV.",
+                "Applied feature engineering and PSO-GA optimisation to healthcare datasets, reducing feature dimensionality by 80% and improving classification performance by approximately 9%.",
+                "Built reproducible workflows for model comparison, metric tracking, performance evaluation, and analytical reporting.",
+            ],
+        },
+        {
+            name: 'Leo Club Eternity Service',
+            shortName: 'Leo Club',
+            role: 'Full Stack Developer',
+            url: 'https://leoclubes.org/',
+            start: 'Apr 2023',
+            end: 'Jul 2023',
+            shortDescription: [
+                "Developed a public-facing product platform using React, REST APIs, Git, Sanity CMS, and cloud hosting, supporting content workflows, backend integrations, and documented delivery.",
+                "Collaborated in a 10+ member multidisciplinary team across UI/UX, content, social media, photography, and engineering.",   
             ],
         },
     ];
@@ -55,7 +83,7 @@ function Experience() {
                     {experience.map((exp, index) => {
                         return <li key={index} className={`exp-slider-item ${index === selected && "exp-slider-item-selected"}`}
                             onClick={() => setSelected(index)}>
-                            <span>{exp.name}</span>
+                            <span>{exp.shortName}</span>
                         </li>
                     })}
                 </ul>

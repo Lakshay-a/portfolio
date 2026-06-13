@@ -21,32 +21,33 @@ function About() {
             <div className="about-grid">
                 <div className="about-grid-info">
                     <p className="about-grid-info-text">
-                    Hello, I&apos;m Lakshay Arora, a Computer Science student from New Delhi with a passion for technology and a strong background in <span className="imp">full-stack development</span>. I find great joy in crafting efficient and elegant solutions for web applications and I also have in-depth knowledge of <span className="imp">data structures and algorithms</span>.
+                    Hello, I&apos;m Lakshay Arora, a <span className="imp">Data Scientist</span> based in London and currently pursuing an MSc in Data Science at <span className="imp">King&apos;s College London</span>. I work at the intersection of machine learning, analytics, and software engineering.
                     </p>
                     <p className="about-grid-info-text">
-                    I have a strong passion for <span className="imp">machine learning</span>. The idea of creating smart systems that can solve real-world problems excites me, and I&apos;m always eager to explore new ways to apply this cutting-edge technology to various domains.
+                    My recent experience includes building <span className="imp">computer vision</span> and sensor-data pipelines at IIT Delhi, developing healthcare machine learning workflows at MAIT, and turning noisy real-world data into structured outputs for evaluation, reporting, and decision support.
                     </p>
                     <p className="about-grid-info-text">
-                    I am also known for my <span className="imp">flexibility</span> and a genuine <span className="imp">eagerness to learn new things</span>. I believe that the world of technology is constantly evolving, and staying curious and open-minded is essential for personal growth. I&apos;m always up for a challenge and continually seek opportunities to expand my skillset.
+                    I enjoy taking projects from first-principles problem decomposition through feature engineering, model training, metric tracking, API deployment, and stakeholder-ready reporting. I&apos;m especially interested in applied AI for healthcare, data products, and intelligent tooling.
                     </p>
                     <p className="about-grid-info-text">
-                    I am fluent in both <span className="imp">English</span> and <span className="imp">Hindi</span>, which has proven to be a valuable asset in my journey as a tech enthusiast. This bilingual proficiency allows me to effectively communicate and collaborate with a diverse range of individuals, transcending language barriers and fostering a deeper understanding of ideas and concepts. 
+                    I&apos;ve collaborated with clinicians, researchers, designers, and technical teams, and I&apos;m comfortable translating model outputs into clear insights for both technical and non-technical audiences.
                     </p>
                     <p className="about-grid-info-text">
                         Here are a few technologies that have been a core part of my recent work:
                     </p>
                     <ul className="about-grid-info-list">
-                        <li className="about-grid-info-list-item">HTML</li>
-                        <li className="about-grid-info-list-item">CSS</li>
-                        <li className="about-grid-info-list-item">JavaScript</li>
-                        <li className="about-grid-info-list-item">React</li>
-                        <li className="about-grid-info-list-item">Node.js</li>
-                        <li className="about-grid-info-list-item">Next.js</li>
-                        <li className="about-grid-info-list-item">React Native</li>
-                        <li className="about-grid-info-list-item">MongoDB</li>
-                        <li className="about-grid-info-list-item">SQL</li>
-                        <li className="about-grid-info-list-item">C/C++</li>
                         <li className="about-grid-info-list-item">Python</li>
+                        <li className="about-grid-info-list-item">SQL</li>
+                        <li className="about-grid-info-list-item">Pandas</li>
+                        <li className="about-grid-info-list-item">NumPy</li>
+                        <li className="about-grid-info-list-item">Scikit-learn</li>
+                        <li className="about-grid-info-list-item">TensorFlow</li>
+                        <li className="about-grid-info-list-item">PyTorch</li>
+                        <li className="about-grid-info-list-item">OpenCV</li>
+                        <li className="about-grid-info-list-item">FastAPI</li>
+                        <li className="about-grid-info-list-item">Docker</li>
+                        <li className="about-grid-info-list-item">AWS</li>
+                        <li className="about-grid-info-list-item">Git</li>
                     </ul>
                 </div>
                 <div className="about-grid-photo">

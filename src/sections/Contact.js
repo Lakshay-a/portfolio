@@ -31,7 +31,7 @@ function Contact() {
             <h2 className="contact-title">What&apos;s Next?</h2>
             <h2 className="contact-sub-title">Get In Touch</h2>
             <p className='contact-text'>
-                Have a question ? Get in touch with me
+                Have a data science, machine learning, or analytics opportunity in mind? Get in touch.
             </p>
             <form ref={form} onSubmit={sendEmail} className="contact-form">
                 <div className="contact-form-div">
