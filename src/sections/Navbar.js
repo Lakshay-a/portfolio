@@ -1,8 +1,7 @@
 "use client";
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import Link from "next/link"
 import Logo from '@/components/Logo'
-import Button from '@/components/Button';
 import { BsMoonStarsFill, BsSunFill } from 'react-icons/bs';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { CgClose } from 'react-icons/cg';
@@ -18,7 +17,7 @@ function Navbar() {
     ];
 
     const [isLightMode, setIsLightMode] = useState(false);
-    const [prevScrollPos, setPrevScrollPos] = useState(0);
+    const prevScrollPos = useRef(0);
     const [visible, setVisible] = useState(true);
     const [hamburgerOpen, setHamburgerOpen] = useState(false);
 
@@ -26,26 +25,26 @@ function Navbar() {
         position: 'fixed',
     }
 
-    const handleScroll = () => {
-        if (hamburgerOpen) return;
-        const currentScrollPos = window.scrollY;
-
-        setVisible((prevScrollPos > currentScrollPos) || currentScrollPos < 10);
-
-        setPrevScrollPos(currentScrollPos);
-    };
-
     const toggleTheme = () => {
         setIsLightMode(!isLightMode);
         document.documentElement.classList.toggle('light');
     }
 
     useEffect(() => {
+        const handleScroll = () => {
+            if (hamburgerOpen) return;
+            const currentScrollPos = window.scrollY;
+
+            setVisible((prevScrollPos.current > currentScrollPos) || currentScrollPos < 10);
+
+            prevScrollPos.current = currentScrollPos;
+        };
+
         window.addEventListener('scroll', handleScroll);
 
         return () => window.removeEventListener('scroll', handleScroll);
 
-    }, [prevScrollPos, visible]);
+    }, [hamburgerOpen]);
 
     useEffect(() => {
         const links = document.querySelectorAll('.nav-items-list-item-link');
@@ -156,18 +155,6 @@ function Navbar() {
                                 </motion.li>
                             ))}
                         </ul>
-                        <motion.div
-                            className="nav-items-button"
-                            initial={{ opacity: 0, y: -25 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{
-                                duration: 0.3,
-                                ease: "easeInOut",
-                                delay: 0.7
-                            }}
-                        >
-                            <Button text="Resume" link="/resume.pdf" />
-                        </motion.div>
                     </div>
                 </div>
             </div>

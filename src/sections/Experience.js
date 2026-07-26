@@ -21,9 +21,10 @@ function Experience() {
             start: 'May 2025',
             end: 'Aug 2025',
             shortDescription: [
-                "Built AI-enabled data pipelines using Python, OpenCV, MediaPipe, YOLO, Intel RealSense, and MySQL to convert real-time video and depth streams into structured data.",
-                "Engineered processing workflows for noisy sequential sensor data, including calibration, validation, anomaly detection, movement metrics, reporting, and performance review.",
-                "Partnered with clinicians, researchers, and technical stakeholders to refine analytics outputs and translate model results into clinical decision support.",
+                "Progressed from Research Intern to Junior Research Fellow across an 8-month computer vision research track focused on clinical movement analysis.",
+                "Built ML research workflows using Python, PyTorch, Scikit-learn, OpenCV, MediaPipe, YOLO, Intel RealSense, Unity, and MySQL to convert noisy sequential sensor data into structured features for inference and analysis.",
+                "Developed preprocessing, feature extraction, validation, benchmarking, and database-backed pipelines for reproducible experiments, model evaluation, and robust analytical code.",
+                "Tested outputs with 25 subjects, mentored two summer interns, and communicated model assumptions, performance trade-offs, limitations, and recommendations to physiotherapists, clinicians, researchers, and technical stakeholders.",
             ],
         },
         {
@@ -34,8 +35,8 @@ function Experience() {
             start: 'Dec 2024',
             end: 'Apr 2025',
             shortDescription: [
-                "Supported computer vision research by developing video and depth-data processing workflows for movement analysis.",
-                "Worked across experimentation, data validation, metric extraction, and reporting to make model outputs easier to evaluate and interpret.",
+                "Supported 5 months of computer vision research by developing video and depth-data workflows for movement analysis, data validation, metric extraction, and reporting.",
+                "Worked across experimentation and model-output interpretation to make noisy clinical sensor data easier to evaluate and explain.",
             ],
         },
         {
@@ -46,9 +47,9 @@ function Experience() {
             start: 'Sep 2023',
             end: 'Sep 2024',
             shortDescription: [
-                "Developed machine learning and analytics pipelines using Python, TensorFlow, Keras, Scikit-learn, Pandas, NumPy, and OpenCV.",
-                "Applied feature engineering and PSO-GA optimisation to healthcare datasets, reducing feature dimensionality by 80% and improving classification performance by approximately 9%.",
-                "Built reproducible workflows for model comparison, metric tracking, performance evaluation, and analytical reporting.",
+                "Researched statistical modelling, applied ML, classification, deep learning, model evaluation, and optimisation workflows across a 12-month research assistantship.",
+                "Used Python, TensorFlow, Keras, Scikit-learn, Pandas, NumPy, and OpenCV to work with complex, high-dimensional healthcare datasets.",
+                "Applied Particle Swarm Optimisation and Genetic Algorithms for feature selection, hyperparameter search, and dimensionality reduction, reducing features by 80% and improving model performance by approximately 9%.",
             ],
         },
         {
