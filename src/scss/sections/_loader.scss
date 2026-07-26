@@ -1,11 +1,15 @@
 .loader {
     color: var(--theme-color);
     fill: none;
+    position: fixed;
+    inset: 0;
+    z-index: 999;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    height: 90vh;
+    min-height: 100vh;
+    background-color: var(--background-color);
 
     svg {
         height: 10rem !important;

@@ -17,26 +17,16 @@ function Experience() {
             name: 'Indian Institute of Technology, Delhi',
             shortName: 'IIT Delhi',
             role: 'Junior Research Fellow (Computer Vision)',
+            previousRole: 'Research Intern',
             url: 'https://home.iitd.ac.in/',
             start: 'May 2025',
             end: 'Aug 2025',
+            previousStart: 'Dec 2024',
+            previousEnd: 'Apr 2025',
             shortDescription: [
-                "Progressed from Research Intern to Junior Research Fellow across an 8-month computer vision research track focused on clinical movement analysis.",
-                "Built ML research workflows using Python, PyTorch, Scikit-learn, OpenCV, MediaPipe, YOLO, Intel RealSense, Unity, and MySQL to convert noisy sequential sensor data into structured features for inference and analysis.",
-                "Developed preprocessing, feature extraction, validation, benchmarking, and database-backed pipelines for reproducible experiments, model evaluation, and robust analytical code.",
-                "Tested outputs with 25 subjects, mentored two summer interns, and communicated model assumptions, performance trade-offs, limitations, and recommendations to physiotherapists, clinicians, researchers, and technical stakeholders.",
-            ],
-        },
-        {
-            name: 'Indian Institute of Technology, Delhi',
-            shortName: 'IIT Delhi',
-            role: 'Research Intern',
-            url: 'https://home.iitd.ac.in/',
-            start: 'Dec 2024',
-            end: 'Apr 2025',
-            shortDescription: [
-                "Supported 5 months of computer vision research by developing video and depth-data workflows for movement analysis, data validation, metric extraction, and reporting.",
-                "Worked across experimentation and model-output interpretation to make noisy clinical sensor data easier to evaluate and explain.",
+                <>Built healthcare-focused <span className="imp">data science and ML pipelines</span> using <span className="imp">Python, PyTorch, Scikit-learn, OpenCV, MediaPipe, YOLO, Intel RealSense, and MySQL</span>, converting noisy movement data into structured analytical outputs.</>,
+                <>Designed <span className="imp">preprocessing, feature engineering, validation, benchmarking, and SQL-backed workflows</span> to improve data quality, reproducibility, model-readiness, and auditability across multi-source datasets.</>,
+                <>Tested outputs with <span className="imp">25 subjects</span>, worked with researchers and physiotherapists, mentored <span className="imp">two interns</span>, and explained model behaviour, uncertainty, and limitations to mixed technical and clinical audiences.</>,
             ],
         },
         {
@@ -47,9 +37,8 @@ function Experience() {
             start: 'Sep 2023',
             end: 'Sep 2024',
             shortDescription: [
-                "Researched statistical modelling, applied ML, classification, deep learning, model evaluation, and optimisation workflows across a 12-month research assistantship.",
-                "Used Python, TensorFlow, Keras, Scikit-learn, Pandas, NumPy, and OpenCV to work with complex, high-dimensional healthcare datasets.",
-                "Applied Particle Swarm Optimisation and Genetic Algorithms for feature selection, hyperparameter search, and dimensionality reduction, reducing features by 80% and improving model performance by approximately 9%.",
+                <>Researched <span className="imp">classification, deep learning, statistical modelling, model evaluation, and optimisation</span> using Python, TensorFlow, Keras, Scikit-learn, Pandas, NumPy, and OpenCV on healthcare datasets.</>,
+                <>Applied <span className="imp">Particle Swarm Optimisation</span> and <span className="imp">Genetic Algorithms</span> for feature selection and hyperparameter search, reducing features by <span className="imp">80%</span> and improving performance by approximately <span className="imp">9%</span>.</>,
             ],
         },
         {
@@ -60,14 +49,14 @@ function Experience() {
             start: 'Apr 2023',
             end: 'Jul 2023',
             shortDescription: [
-                "Developed a public-facing product platform using React, REST APIs, Git, Sanity CMS, and cloud hosting, supporting content workflows, backend integrations, and documented delivery.",
-                "Collaborated in a 10+ member multidisciplinary team across UI/UX, content, social media, photography, and engineering.",   
+                <>Shipped a public-facing full-stack application using <span className="imp">React, REST APIs, Git/GitHub, Sanity CMS, and cloud hosting</span>, strengthening API integration, documentation, and iterative delivery.</>,
+                <>Collaborated in a <span className="imp">10+ member</span> multidisciplinary team, translating stakeholder needs into practical web workflows and user-facing digital tools.</>,
             ],
         },
     ];
     return (
         <motion.div className="experience" id='experience'
-            initial="hidden"
+            initial={false}
             whileInView="visible"
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
@@ -102,6 +91,16 @@ function Experience() {
                         <p className="exp-details-range">
                             {experience[selected].start} - {experience[selected].end}
                         </p>
+                        {experience[selected].previousRole && (
+                            <>
+                                <h3>
+                                    <span>{experience[selected].previousRole}</span>
+                                </h3>
+                                <p className="exp-details-range">
+                                    {experience[selected].previousStart} - {experience[selected].previousEnd}
+                                </p>
+                            </>
+                        )}
                         <ul className='exp-details-list'>
                             {
                                 experience[selected].shortDescription.map((desc, index) => (

@@ -12,29 +12,21 @@ import Loader from '@/components/Loader';
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
-  const [showContent, setShowContent] = useState(false);
 
   const handleLoader = () => {
     setIsLoading(false);
-    setTimeout(() => setShowContent(true), 450);
   }
   return (
     <div className='app'>
-      {
-        showContent && (
-          <>
-            <Navbar />
-            <main>
-              <Intro />
-              <About />
-              <Experience />
-              <Projects />
-              <Contact />
-            </main>
-            <Socialicons />
-          </>
-        )
-      }
+      <Navbar />
+      <main>
+        <Intro />
+        <About />
+        <Experience />
+        <Projects />
+        <Contact />
+      </main>
+      <Socialicons />
       <Loader isLoading={isLoading} setIsLoading={handleLoader} />
     </div>
   )

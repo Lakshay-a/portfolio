@@ -79,7 +79,7 @@ function Navbar() {
 
                 <motion.div
                     className="logo"
-                    initial={{ opacity: 0 }}
+                    initial={false}
                     animate={{ opacity: 1 }}
                     transition={{
                         duration: 0.3,
@@ -97,7 +97,7 @@ function Navbar() {
                         <motion.button
                             className='toggle-button'
                             onClick={toggleTheme}
-                            initial={{ opacity: 0, y: -25 }}
+                            initial={false}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{
                                 duration: 0.3,
@@ -111,7 +111,7 @@ function Navbar() {
 
                     <motion.div
                         className="nav-responsive-toggle"
-                        initial={{ opacity: 0 }}
+                        initial={false}
                         animate={{ opacity: 1 }}
                         transition={{
                             duration: 0.3,
@@ -141,7 +141,7 @@ function Navbar() {
                                 <motion.li
                                     key={name}
                                     className='nav-items-list-item'
-                                    initial={{ opacity: 0, y: -25 }}
+                                    initial={false}
                                     animate={{ opacity: 1, y: 0 }}
                                     transition={{
                                         duration: 0.3,

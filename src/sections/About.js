@@ -6,7 +6,7 @@ import { motion } from 'framer-motion'
 function About() {
     return (
         <motion.div className="about" id='about'
-        initial="hidden"
+        initial={false}
         whileInView="visible"
         viewport={{once: true}}
         transition={{duration: 0.6}}
@@ -24,7 +24,7 @@ function About() {
                     Hello, I&apos;m Lakshay Arora, a <span className="imp">Data Scientist</span> based in London and currently pursuing an MSc in Data Science at <span className="imp">King&apos;s College London</span>. I work at the intersection of machine learning, analytics, and software engineering.
                     </p>
                     <p className="about-grid-info-text">
-                    My current dissertation is an AI research project on <span className="imp">zebrafish injury time-lapse microscopy</span>, using drift correction, preprocessing, Cellpose 2.5D/3D segmentation, tracking, and sequential feature extraction.
+                    My dissertation is a reproducible ML pipeline for <span className="imp">4D biomedical time-lapse imaging data</span>, covering QC, segmentation, tracking, feature extraction, and robust validation.
                     </p>
                     <p className="about-grid-info-text">
                     My recent experience includes building <span className="imp">computer vision</span> and sensor-data pipelines at IIT Delhi, developing healthcare machine learning workflows at MAIT, and turning noisy high-dimensional data into structured features for inference, benchmarking, reporting, and decision support.
