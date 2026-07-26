@@ -1,26 +1,34 @@
 "use client";
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
-import Button from '@/components/Button';
 import { motion } from 'framer-motion';
 
 function Contact() {
     const form = useRef();
+    const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
+    const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
+    const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
 
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm("service_1tzsci1", "template_95s1vqa", form.current, 'ayiOGQUKDHuuy7-6c')
+        if (!serviceId || !templateId || !publicKey) {
+            console.error('EmailJS environment variables are missing.');
+            return;
+        }
+
+        emailjs.sendForm(serviceId, templateId, form.current, publicKey)
             .then((result) => {
                 console.log(result.text);
+                form.current.reset();
             }, (error) => {
                 console.log(error.text);
             });
-        form.current.reset();
     };
+
     return (
         <motion.div className="contact" id='contact'
-            initial="hidden"
+            initial={false}
             whileInView="visible"
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
@@ -50,9 +58,9 @@ function Contact() {
                     <label className='contact-form-tag'>Message</label>
                     <textarea name="message" cols="30" rows="10" className="contact-form-input" placeholder='Enter your message...' required></textarea>
                 </div>
-                <div className="contact-cta" onClick={sendEmail}>
-                    <Button text="Send message" link="/#contact" />
-                </div>
+                <button type="submit" className="contact-cta btn">
+                    Send message
+                </button>
             </form>
 
         </motion.div>

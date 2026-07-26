@@ -6,7 +6,7 @@ function Intro() {
   return (
     <div className="intro">
       <motion.h1 className="intro-title"
-        initial={{ opacity: 0, y: 5 }}
+        initial={false}
         animate={{ opacity: 1, y: 0 }}
         transition={{
           duration: 0.3,
@@ -16,7 +16,7 @@ function Intro() {
         Hi my name is
       </motion.h1>
       <motion.h2 className="intro-title-large"
-        initial={{ opacity: 0, y: 5 }}
+        initial={false}
         animate={{ opacity: 1, y: 0 }}
         transition={{
           duration: 0.3,
@@ -26,7 +26,7 @@ function Intro() {
         Lakshay Arora.
       </motion.h2>
       <motion.h3 className="intro-title-large intro-title-sub"
-        initial={{ opacity: 0, y: 5 }}
+        initial={false}
         animate={{ opacity: 1, y: 0 }}
         transition={{
           duration: 0.3,
@@ -36,7 +36,7 @@ function Intro() {
         Data Scientist building machine learning, computer vision, and analytics systems that turn complex data into useful decisions.
       </motion.h3>
       <motion.p className="intro-text"
-        initial={{ opacity: 0, y: 5 }}
+        initial={false}
         animate={{ opacity: 1, y: 0 }}
         transition={{
           duration: 0.3,

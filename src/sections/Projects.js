@@ -46,7 +46,7 @@ function Projects() {
     ];
     return (
         <motion.div className="projects" id='work'
-            initial="hidden"
+            initial={false}
             whileInView="visible"
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}

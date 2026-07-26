@@ -36,7 +36,7 @@ function Socialicons() {
     ];
     return (
         <motion.div className="social-icons"
-            initial={{ opacity: 0 }}
+            initial={false}
             animate={{ opacity: 1 }}
             transition={{
                 duration: 0.3,
